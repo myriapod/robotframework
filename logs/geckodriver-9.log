@@ -1,0 +1,15 @@
+1743598540063	geckodriver	INFO	Listening on 127.0.0.1:49415
+1743598540201	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" "/usr/bin/firefox" "--m ... te" "--remote-debugging-port" "38799" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileSjdtPX"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1743598541524	Marionette	INFO	Marionette enabled
+1743598541907	Marionette	INFO	Listening on port 41281
+WebDriver BiDi listening on ws://127.0.0.1:38799
+Read port: 41281
+1743598542281	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 182: TypeError: this._element is null
+JavaScript error: https://media.ethicalads.io/media/client/v1.4.0/ethicalads.min.js, line 1: Error: No ad placements found.
+JavaScript error: resource:///actors/FormValidationChild.sys.mjs, line 182: TypeError: this._element is null
+1743598548497	Marionette	INFO	Stopped listening on port 41281

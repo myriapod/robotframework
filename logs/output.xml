@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.12.7 on linux)" generated="2025-04-02T14:55:39.530793" rpa="false" schemaversion="5">
+<suite id="s1" name="Test" source="/home/Administrateur/Bureau/Solene/SELENIUM/robotframework/test.robot">
+<test id="s1-t1" name="Valid Search" line="16">
+<kw name="Open Search Page">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-04-02T14:55:39.888590" level="INFO">Opening browser 'firefox' to base url 'https://www.python.org/ Firefox'.</msg>
+<arg>${URL} ${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-04-02T14:55:39.887975" elapsed="7.583103"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2025-04-02T14:55:47.520279" level="INFO">Page title is 'Welcome to Python.org'.</msg>
+<arg>${VALID TITLE}</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2025-04-02T14:55:47.471540" elapsed="0.048984"/>
+</kw>
+<status status="PASS" start="2025-04-02T14:55:39.885916" elapsed="7.634944"/>
+</kw>
+<kw name="Input Search">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-02T14:55:47.523400" level="INFO">Typing text 'robotframework' into text field 'id-search-field'.</msg>
+<arg>${SEARCH BAR ID}</arg>
+<arg>${SEARCH}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-02T14:55:47.522338" elapsed="0.156787"/>
+</kw>
+<status status="PASS" start="2025-04-02T14:55:47.521561" elapsed="0.157858"/>
+</kw>
+<kw name="Click Search Button">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-02T14:55:47.681137" level="INFO">Clicking button 'submit'.</msg>
+<arg>${SEARCH BUTTON ID}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-02T14:55:47.680620" elapsed="0.773934"/>
+</kw>
+<status status="PASS" start="2025-04-02T14:55:47.679985" elapsed="0.775111"/>
+</kw>
+<kw name="Search Page Should Be Open">
+<kw name="Location Should Be" owner="SeleniumLibrary">
+<msg time="2025-04-02T14:55:48.492700" level="INFO">Current location is 'https://www.python.org/search/?q=robotframework&amp;submit='.</msg>
+<arg>${SEARCH URL}</arg>
+<doc>Verifies that the current URL is exactly ``url``.</doc>
+<status status="PASS" start="2025-04-02T14:55:48.456726" elapsed="0.036243"/>
+</kw>
+<status status="PASS" start="2025-04-02T14:55:48.455704" elapsed="0.037510"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-02T14:55:48.493884" elapsed="1.443162"/>
+</kw>
+<status status="PASS" start="2025-04-02T14:55:39.884361" elapsed="10.053051"/>
+</test>
+<doc>Test using Selenium Library to search https://www.python.org/search/?q=robotframework&amp;submit=</doc>
+<status status="PASS" start="2025-04-02T14:55:39.532672" elapsed="10.406232"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Test" id="s1" pass="1" fail="0" skip="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

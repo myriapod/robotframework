@@ -1,0 +1,2 @@
+1743597496120	geckodriver	INFO	Listening on 127.0.0.1:47227
+1743597496488	webdriver::server	WARN	Rejected request with Host header localhost:47227, allowed values are []
