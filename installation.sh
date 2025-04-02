@@ -1,1 +1,1 @@
-python3.12 -m pip install robotframework
+python3.12 -m pip install robotframework robotframework-selenium
