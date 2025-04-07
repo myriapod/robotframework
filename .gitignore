@@ -1,1 +1,6 @@
 logs
+log.html
+interactive_console_output.xml
+report.html
+output.xml
+.gitignore
