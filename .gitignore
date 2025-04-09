@@ -1,6 +1,11 @@
-logs
+logs/
 log.html
 interactive_console_output.xml
 report.html
 output.xml
 .gitignore
+workspace/
+remoting/
+caches/
+logs/
+agent.jar
