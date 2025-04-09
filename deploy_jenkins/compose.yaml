@@ -1,0 +1,22 @@
+services:
+  jenkins:
+    container_name: jenkins
+    build: .
+    privileged: true
+    user: root
+    ports:
+      - 8080:8080
+      - 50000:50000
+    volumes:
+      - jenkins_home:/var/jenkins_home
+
+  ssh-agent:
+    image: jenkins/ssh-agent
+    privileged: true
+    user: root
+    container_name: jenkins-ssh-agent
+    expose:
+      - 22
+
+volumes:
+  jenkins_home:

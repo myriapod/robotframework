@@ -1,0 +1,14 @@
+# syntax=docker/dockerfile:1
+
+FROM jenkins/jenkins:lts-jdk11
+ENV JAVA_OPTS -Djenkins.install.runSetupWizard=false
+ENV CASC_JENKINS_CONFIG /var/jenkins_home/casc.yaml
+
+EXPOSE 8080
+EXPOSE 50000
+
+# /var/jenkins_home/secrets/initialAdminPassword
+
+COPY --chown=jenkins:jenkins plugins.txt /usr/share/jenkins/ref/plugins.txt
+RUN jenkins-plugin-cli -f /usr/share/jenkins/ref/plugins.txt
+COPY casc.yaml /var/jenkins_home/casc.yaml
