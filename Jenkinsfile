@@ -7,7 +7,7 @@ pipeline {
                 // --nostatusrc prevents your job from failing automatically if any
                 // tests fail. This is then later handled with the RF plugin with
                 // pass thresholds
-                sh script: "robot --nostatusrc database.robot", returnStatus: true
+                sh script: "robot database.robot", returnStatus: true
             }
         }
     }
