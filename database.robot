@@ -1,22 +1,14 @@
 *** Settings ***
 Documentation    Testing the database library
-Library    DatabaseLibrary
-Library    OperatingSystem
-Library    Collections
-Suite Setup    Connect To Database    ${DBMODULE}    ${DBNAME}    ${DBUser}    ${DBPass}    ${DBHOST}
-Suite Teardown    Disconnect From Database
-
-*** Keywords ***
-
+Variables    Ressources/Variables/db_var.yml
+Resource    Ressources/Keywords/db_keywords.robot
+Resource    Ressources/Settings/db_settings.robot
+Suite Setup    Connect To DB
+Suite Teardown    Disconnect DB
 
 *** Variables ***
-${DBMODULE}    pymysql
-${DBHOST}    localhost
-${DBNAME}    robottest
-${DBUser}    root
-${DBPass}    root
-${EXISTS}    Table 'person' already exists
-${output}    ""
+${EXISTS}    ${OutputVars.EXISTS}
+${output}    ${OutputVars.output}
 
 *** Test Cases ***
 Create person Table

@@ -1,0 +1,10 @@
+DBVars:
+  DBMODULE: pymysql
+  DBHOST: localhost
+  DBNAME: robottest
+  DBUSER:
+    Username: root
+    Password: root
+OutputVars:
+  EXISTS: "Table 'person' already exists"
+  output: ""
