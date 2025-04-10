@@ -1,2 +1,0 @@
-1743597617509	geckodriver	INFO	Listening on 127.0.0.1:36321
-1743597617898	webdriver::server	WARN	Rejected request with Host header localhost:36321, allowed values are []

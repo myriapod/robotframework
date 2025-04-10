@@ -1,2 +1,0 @@
-1743597654359	geckodriver	INFO	Listening on 127.0.0.1:39033
-1743597654731	webdriver::server	WARN	Rejected request with Host header localhost:39033, allowed values are []
